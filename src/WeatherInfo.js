@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img src="{weatherData.iconUrl}" alt="weatherData.description" />
+          <img src="{props.data.iconUrl}" alt="props.data.description" />
           <span className="temperature">
             {Math.round(props.data.temperature)}
           </span>
